@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1905921298354490}
+  m_IsPrefabParent: 1
+--- !u!1 &1126844059925806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4155868952335538}
+  - component: {fileID: 20995793045594690}
+  - component: {fileID: 92266336424174520}
+  - component: {fileID: 124993829603121912}
+  - component: {fileID: 81099954643878992}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1905921298354490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4083947548031752}
+  - component: {fileID: 114254655474832022}
+  m_Layer: 0
+  m_Name: LevelGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4083947548031752
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1905921298354490}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.756112, y: 0.36718273, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4155868952335538}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4155868952335538
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1126844059925806}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.576113, y: 4.442817, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4083947548031752}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &20995793045594690
+Camera:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1126844059925806}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.15294118, g: 0.14705884, b: 0.50735295, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!81 &81099954643878992
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1126844059925806}
+  m_Enabled: 1
+--- !u!92 &92266336424174520
+Behaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1126844059925806}
+  m_Enabled: 1
+--- !u!114 &114254655474832022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1905921298354490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5581edaa24cf3b0479fa2eb19249882b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ground: {fileID: 1760199190662882, guid: 7d77d85f68063284b923de9293fcd615, type: 2}
+  enemy1: {fileID: 1213958732273772, guid: ed46429a695d6e349a911ec2760e88d5, type: 2}
+  enemy2: {fileID: 1677441447441098, guid: 579541f1b4fe59046a923924006b27d7, type: 2}
+  enemies:
+  - {fileID: 0}
+  - {fileID: 0}
+  spikes: {fileID: 1425391670848212, guid: 2295973feb9a96747a465ad47e70add3, type: 2}
+  chest: {fileID: 1349732369872168, guid: a9d53cc1a7675154e8e64ecb3e4b059c, type: 2}
+  grass: {fileID: 21300000, guid: 34a26f396d6c643468f5ab93fad55afb, type: 3}
+  dirt: {fileID: 21300000, guid: b398bdd749aba004b9c7abc86e28f3c4, type: 3}
+  sand: {fileID: 1605733375548772, guid: 362484a93ac36d24f927d61bcf7177c6, type: 2}
+  ice: {fileID: 1598226419031740, guid: 04e067170522b934eaaaeca8ea10e429, type: 2}
+  cameraScale: 8
+  blockSize: 0.7
+  width: 0.7
+  height: 0.7
+  character: 0
+  mapTranslation: {x: 0, y: 0}
+  border: {fileID: 1295407031035694, guid: d5dc41f1981a2fd469373d51b4bc6aa3, type: 2}
+  player: {fileID: 1428126616909532, guid: 4977c70d70bce9c43aa672e99b5f2d98, type: 2}
+--- !u!124 &124993829603121912
+Behaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1126844059925806}
+  m_Enabled: 1
